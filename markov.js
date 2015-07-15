@@ -38,7 +38,7 @@ return title.join(' ');
 
 
 $('#render').on('click', function () {
-	word_list = ["joshua raichur", "good boy", "joshua raichur is a goiod boy", "good day today", "happy day", "day is wonderful"];
+	word_list = $('#input').val().split(',');
 	var title = make_title(3 + Math.floor(3 * Math.random()));
 	$('#output').html(title);
 });
