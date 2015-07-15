@@ -2,11 +2,9 @@ var startwords = []
 var wordstats = {};
 var terminals = {};
 
-
 $('#render').on('click', function () {
 
 	var wordlist = $('#input').val().split(', ');
-	
 	
 	for (var i = 0; i < wordlist.length; i++) {
 	var words = wordlist[i].split(' ');
@@ -42,10 +40,7 @@ var make_title = function (min_length) {
 };
 
 var title = make_title(3 + Math.floor(3 * Math.random()));
-	$('#output').html(title);
-
-
-
+$('#output').html(title);
 
 });
 
