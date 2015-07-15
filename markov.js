@@ -22,7 +22,7 @@ var choice = function (a) {
 };
 
 var make_title = function (min_length) {
-	word = choice(start_words);
+	var word = choice(start_words);
 	var title = [word];
 	while (word_stats.hasOwnProperty(word)) {
 		var next_words = word_stats[word];
